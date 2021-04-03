@@ -1,0 +1,24 @@
+<div style="text-align:center">
+    <h1>
+      Welcome
+    </h1>
+    <button (click)="getCountry()">Fetch countries data</button>
+   </div>
+  
+      <div *ngFor="let c of countries" class="col-sm">
+        <ul>
+          <li (click) = "getCountry">{{c.country}}</li>
+        </ul>
+      </div>
+  
+  
+  <!-- 
+  <div>
+    <button (click)="getData()">Fetch Data</button>
+  </div>
+  <div *ngFor="let image of data" style="text-align:center">
+  <h3>
+     {{ image.title }}
+   </h3>
+   <img width="200" alt="thumbnail" [src]="image.thumbnailUrl">
+  </div> -->
